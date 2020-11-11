@@ -16,7 +16,9 @@ var init = function init() {
   ReactDOM.render( /*#__PURE__*/React.createElement(SongContainer, {
     songs: []
   }), document.querySelector("#app"));
-  loadSongsFromServer();
+  setTimeout(function () {
+    loadSongsFromServer();
+  }, 2000);
 };
 
 var loadSongsFromServer = function loadSongsFromServer() {

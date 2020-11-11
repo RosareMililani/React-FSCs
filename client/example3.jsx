@@ -30,7 +30,7 @@ const SongContainer = (props) => {
       document.querySelector("#app")
     );
 
-    //loadSongsFromServer();
+    setTimeout(() => {loadSongsFromServer()}, 2000);
   };
 
   const loadSongsFromServer = () => {
