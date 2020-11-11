@@ -10,6 +10,14 @@ const example3 = (req, res) => {
   res.render('example3');
 };
 
+const getSongs = (req,res) => {
+  res.json([
+    {artist: "Bruce", title: "Born to Run"},
+    {artist: "Unknown", title: "I'm a little Teapot"}
+  ])
+};
+
 module.exports.example1 = example1;
 module.exports.example2 = example2;
 module.exports.example3 = example3;
+module.exports.getSongs = getSongs;
